@@ -47,7 +47,7 @@ Open any `SKILL.md` here. Each one starts with a line called **In plain words** 
 | `whisperx` | Hears each word and the exact moment it is spoken | Free |
 | Node.js | Lets Claude build the edit in [HyperFrames](https://github.com/heygen-com/hyperframes) or [Remotion](https://www.remotion.dev) | Free |
 | HyperFrames skills (recommended) | So the edit opens in HyperFrames Studio, where you can trim and drag clips: `npx skills add heygen-com/hyperframes` | Free |
-| [Palmier Pro](https://palmier.io) (optional) | A regular Mac video editor Claude can drive. Needs **macOS 26 or newer**. See [Connect Palmier Pro](#connect-palmier-pro-optional) | Free to start |
+| [Palmier Pro](https://palmier.io) (optional) | A regular Mac video editor Claude can drive. Needs **macOS 26 or newer on an Apple Silicon Mac** (no Windows or Intel version). See [Connect Palmier Pro](#connect-palmier-pro-optional) | Free to start |
 
 On a Mac:
 
