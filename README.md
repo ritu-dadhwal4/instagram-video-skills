@@ -15,7 +15,7 @@ This is not one skill. It is **28 small skills that work as a team**. One of the
 2. [What you need](#what-you-need)
 3. [Install](#install)
 4. [How one edit goes, step by step](#how-one-edit-goes-step-by-step)
-5. [The six questions it asks you](#the-six-questions-it-asks-you)
+5. [The seven questions it asks you](#the-seven-questions-it-asks-you)
 6. [Editing styles you can pick](#editing-styles-you-can-pick)
 7. [Caption styles you can pick](#caption-styles-you-can-pick)
 8. [Where b-roll comes from](#where-b-roll-comes-from)
@@ -75,7 +75,7 @@ mkdir -p ~/Videos/reels/.claude && cp -R instagram-video-skills/skills ~/Videos/
 cp instagram-video-skills/brand.example.md ~/Videos/reels/brand.md
 ```
 
-Open `brand.md` and fill in your colours, fonts and the spellings of your brand and product names. Then open Claude Code in `~/Videos/reels`. Type `/skills` and you should see `reel-edit` and the others listed.
+Open `brand.md` and fill in the spellings of your brand and product names (colours and fonts go in `design.md`, which Claude can write for you on the first reel). Then open Claude Code in `~/Videos/reels`. Type `/skills` and you should see `reel-edit` and the others listed.
 
 ### Connect Palmier Pro (optional)
 
@@ -93,7 +93,7 @@ Put your raw footage in a folder, then say **"edit this reel"** and point to the
 
 | When | What happens | Skill | Do you do anything? |
 |---|---|---|---|
-| Start | Claude asks six questions in one message | `reel-edit` | **Yes: answer them** (style and captions are chosen here) |
+| Start | Claude asks seven questions, in two quick rounds | `reel-edit` | **Yes: answer them** (style and captions are chosen here) |
 | Stage 0 | Lists every visual the video needs and fact-checks what you said | `asset-plan` | **Yes: read the plan, say yes** |
 | Stage 1 | Rough cut: best take of each line, silences and fumbles out | `shortform-cutaway` | No |
 | Stage 2 | Checks the real audio at every cut so no word is chopped | `cut-audit` | No |
@@ -118,9 +118,12 @@ edits/my-video/
   out/      the renders, numbered v1, v2, v3
 ```
 
-## The six questions it asks you
+## The seven questions it asks you
 
-All five arrive together, before any work starts.
+They arrive in two quick rounds, before any work starts. The first one is about the look.
+
+0. **Look (design file).** Do you have a `design.md`, reference pictures (Pinterest saves, screenshots of reels you like) or brand colour codes? Give any of them and Claude writes a `design.md` and shows it to you. Have nothing? It offers three or four ready themes from [themes.md](skills/reel-edit/themes.md) (Clean White, Midnight Tech, Paper Craft, Pastel Pop, Bold Mono, Soft Earth), each with its colours, and you pick one. The file is saved next to your videos, so the next reel skips this question. Template: [design.example.md](skills/reel-edit/design.example.md).
+
 
 1. **Footage.** Your main video, plus any extra clips you want used: screen recordings, product shots, other takes, phone b-roll. Just attach them. You don't have to say where each one goes.
 
@@ -210,7 +213,7 @@ Before downloading, it shows you a table of picks with links and the licence of 
 ### The front door
 | Skill | In plain words |
 |---|---|
-| [reel-edit](skills/reel-edit/SKILL.md) | Asks the five questions, then calls every other skill in order. The only one you talk to. |
+| [reel-edit](skills/reel-edit/SKILL.md) | Asks the seven questions, then calls every other skill in order. The only one you talk to. |
 
 ### The pipeline, in order
 | Stage | Skill | In plain words |

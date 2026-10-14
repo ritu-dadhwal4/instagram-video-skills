@@ -39,6 +39,8 @@ Each look can also have: plain / solid box behind / outline-and-shadow, as Insta
 Show both tables with a one-line recommendation for the chosen editing style (caption-edit → Word pop; split-screen, paper-drawer, whiteout, board-build → Keywords only or Karaoke line; longform → Subtitle bar; vlog, b-roll → Boxed). If the brief has no caption answer, ask before building; never choose silently.
 
 ## Steps
+When `design.md` names a caption look and colours, offer that first and build captions in its fonts and accent colour.
+
 1. Re-map each word's time from the raw file to the edited timeline using `work/cuts.json` (subtract the removed parts).
 2. Convert to frames: `frame = round(seconds * 30)`.
 3. Group words to suit the chosen style (Word pop 1 to 3 words, Karaoke and Subtitle one line, Boxed 2 to 4 words); break at natural pauses, never mid-phrase.

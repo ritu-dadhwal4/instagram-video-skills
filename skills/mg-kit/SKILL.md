@@ -7,6 +7,7 @@ description: The motion-graphics kit. Use whenever an edit needs animation - how
 **In plain words:** the box of ready-made moves. Instead of inventing a new animation each time, every video uses the same small set, so all of the creator's videos feel like one family.
 
 ## Tokens
+- `design.md` (from the reel-edit brief: their own file, their reference pictures, or a theme from reel-edit/themes.md) wins over every default below.
 - Colours and fonts: read them from the creator's brand kit (`brand.md` in the edit folder or project root; see brand.example.md). Do not hard-code new ones.
 - Frame rate 30. Reel 1080x1920. Long-form 1920x1080.
 

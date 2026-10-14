@@ -10,14 +10,20 @@ description: Router for all video editing. Use when the creator says "edit this 
 `edits/<video-name>/` with `raw/` (main footage, untouched), `raw/extra/` (the creator's own extra clips, untouched), `work/` (transcript.json, cuts.json, asset-plan.md, geometry.json), `assets/` (graphics, b-roll, sfx), `out/` (renders). Never modify files in `raw/`.
 
 ## Ask first: the brief (one message, before any work)
-The creator does not call the skills one by one. They say "edit this reel" and answers these six questions once; then the pipeline runs on its own. Ask them together with AskUserQuestion, with the recommended option first. Skip any already answered in their message.
+The creator does not call the skills one by one. They say "edit this reel" and answers these seven questions once; then the pipeline runs on its own. Ask them with AskUserQuestion (it takes 4 questions per call, so use two calls back to back), with the recommended option first. Skip any already answered in their message.
 1. **Footage** - the main video, and any extra clips (screen recordings, product shots, other takes, phone b-roll). Ask only: "Any other clips you want in this reel? Just attach them." Do NOT ask where each goes; asset-plan matches them and shows a clip map to confirm.
 2. **Where it goes** - Instagram reel (9:16), YouTube long (16:9), or both; target length.
 3. **Editing style** - offer the 2 or 3 formats from the table below that fit this footage, each with a one-line description of how it looks, and name the one you recommend. They pick.
 4. **Caption style** - two picks from caption-align: how the words arrive (word pop, karaoke...) and the Instagram look (Classic, Strong, Typewriter...). They pick both.
 5. **Music and sound effects** - none / effects only / effects + music.
 6. **Editor to open it in afterwards** - HyperFrames (recommended: a timeline they can drag and trim in), Remotion, or Palmier Pro (needs macOS 26 or newer and its MCP connected). Before offering Palmier Pro, check that its tools are available in this session; if not, still list it but mark it "not connected on this Mac" and explain in one line. The edit is built in this editor, so it can be changed by hand later.
-If there is no `brand.md` yet, also ask for the brand colours, fonts and name spellings and create it from brand.example.md.
+7. **Look (design file)** - ask this FIRST, before the style questions, because it decides the colours of cards, captions and highlights. "Do you have a design file for your reels (`design.md`), reference pictures (Pinterest saves, screenshots of reels you like) or brand colour codes?" Three ways in:
+   - a `design.md` → use it as is;
+   - reference images or hex codes → read them, write `design.md` from [design.example.md](design.example.md) (colours as hex, fonts, caption look, card shape), show it in one short block and get a yes;
+   - nothing → offer 3 or 4 themes from [themes.md](themes.md) that suit this footage, each with its colours in one line, recommended first. They pick one; write it out as `design.md`.
+   Save `design.md` next to their videos so the next reel skips this question. *Why: a reel with no agreed look gets random colours, and every later reel looks different.*
+   When a design file exists, offer only caption looks that fit it (its fonts and colours), still as options.
+If there is no `brand.md` yet, also ask for the name spellings (brand, product, tools) and create it from brand.example.md.
 Copy attached clips into `raw/` (main) and `raw/extra/` (extras). Save the answers in `work/brief.md`. After this they are asked only twice more: the yes on the asset plan (stage 0), and the yes on the b-roll picks (stage 4).
 
 ## Pick the format

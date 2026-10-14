@@ -13,6 +13,7 @@ description: Stage 4. Use to design the still graphics a video needs - title car
 4. Open each PNG and look at it before using it.
 
 ## Rules
+- Colours, fonts, card corners and highlight style come from `design.md` when the brief has one.
 - Colours and fonts only from the creator's brand kit (`brand.md`). Never an off-palette colour.
 - One idea per card, 7 words or fewer.
 - Numbers and prices are copied from the checked asset plan, never retyped from memory.
