@@ -6,6 +6,8 @@ This is not one skill. It is **28 small skills that work as a team**. One of the
 
 > edit this reel
 
+There is also an add-on, **[Trial Reels Studio](#add-on-trial-reels-studio)**, that works before you film: you share an idea, it writes the script and suggests hooks to test as Instagram trial reels.
+
 > **Status: v0.1, early.** The three helper scripts are tested. The full pipeline has not yet been run end to end on real footage in public; a dry run is coming and this page will be updated with what it found. Expect to give notes.
 
 ---
@@ -24,6 +26,7 @@ This is not one skill. It is **28 small skills that work as a team**. One of the
 11. [Giving notes](#giving-notes-this-is-how-it-gets-better)
 12. [What it cannot do](#what-it-cannot-do)
 13. [Credits](#credits)
+14. [Add-on: Trial Reels Studio](#add-on-trial-reels-studio)
 
 ---
 
@@ -275,3 +278,29 @@ Claude fixes the video **and writes the note into the skill as a rule with its r
 ## Credits
 
 Built by [Ritu Dadhwal](https://github.com/ritu-dadhwal4) with Claude. MIT licence: use it, change it, share it.
+
+## Add-on: Trial Reels Studio
+
+Plan a reel before you film it. You share an idea. Claude writes the script, then suggests several **hooks** for the same video and draws each one as a phone screen, so you can see where your face and the text overlay go. You post each hook as an Instagram **trial reel** (shown to non-followers first), keep the one that wins, and share it with your followers.
+
+It lives in [skills/trial-reels-studio](skills/trial-reels-studio/SKILL.md) and installs with the other skills.
+
+**Say:** `plan trial reels for: <your idea>`
+
+| Step | You do | Claude does |
+|---|---|---|
+| 1. Idea | Share it | Opens a board for the reel and adds it to your home board |
+| 2. Script | Approve or change it | Writes the hook placeholder, body and CTA |
+| 3. Hooks | Answer three questions: how many hooks (2–10), which formats, which CTA | Looks at the hook screenshots in your Drive folder, then draws every hook as a phone mockup |
+| 4. Film | Record the body once, each picked hook, the CTA | Ticks the step |
+| 5. Edit | Say `edit this reel` and attach, in order: the raw video, the reference video, the hook image, then the clips | The video skills edit each version. The HyperFrames Studio address shows on the board |
+| 6. Post | Post the picked hooks as trial reels on the same day | Ticks the step |
+| 7. Winner | After about 24 hours, say which hook won | Marks the winner and the reel as complete |
+
+**What it needs**
+- The Claude desktop app. The boards are Claude whiteboards, and your Drive folder is read in the app's built-in browser.
+- A Google Drive folder of hook screenshots you like (the first frame of reels that stopped you scrolling), shared as **Anyone with the link**. Claude asks for the link on the first run and remembers it.
+- Python 3, to draw the boards.
+
+**Formats it draws:** split (visual top, face bottom), split with the face on top, face in a circle or box over the visual, face only, face holding a prop, green screen, product only, and a text-only opener.
+
