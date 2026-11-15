@@ -1,0 +1,97 @@
+{
+  "board_title": "Trial Reels Studio",
+  "title": "Trial Reels Studio · PPT Claude skill",
+  "takeaway": "From idea to winning hook, one step at a time.",
+  "idea": "AI slides all look the same. Anthropic's free pptx skill makes Claude design for the audience and build a real, editable PowerPoint file.",
+  "script": "**Hook:** one of the 8 below\n**Body:** The deck on screen right now? Made with Anthropic's free pptx skill for Claude. It first works out who the deck is for, then picks colors, layouts and visuals to match. It builds the file with pptxgenjs, so the deck is made from real PowerPoint parts, not images. Click any chart, edit the numbers, and the chart updates. Open it straight in PowerPoint.\n**CTA:** Comment “SLIDES” for the link.",
+  "folder_url": "https://drive.google.com/drive/folders/YOUR_HOOKS_FOLDER_ID",
+  "references": [
+    "face + prop with a question box at the top (H8)",
+    "your saved mockups (H1–H4)"
+  ],
+  "hooks": [
+    {
+      "id": "H1",
+      "angle": "Problem",
+      "format": "split",
+      "scene": "plain-slides",
+      "say": "Every AI presentation looks the same. White background, bullet points, random blue.",
+      "overlay": "Why do AI slides look like this?"
+    },
+    {
+      "id": "H2",
+      "angle": "Before / after",
+      "format": "circle",
+      "scene": "before-after",
+      "say": "Same prompt. Same AI. Watch what one skill changes.",
+      "overlay": "Same prompt. One skill."
+    },
+    {
+      "id": "H3",
+      "angle": "Real chart",
+      "format": "circle",
+      "scene": "chart-edit",
+      "say": "Most AI slides are just pictures. This chart isn't.",
+      "overlay": "This chart is real"
+    },
+    {
+      "id": "H4",
+      "angle": "POV",
+      "format": "split",
+      "scene": "chat-screenshot",
+      "say": "Your boss wants one number changed on the AI slide. And it's a screenshot.",
+      "overlay": "POV: the AI chart is a picture"
+    },
+    {
+      "id": "H5",
+      "angle": "Authority",
+      "format": "box",
+      "scene": "github",
+      "say": "Anthropic has a free fix for ugly AI slides.",
+      "overlay": "Official. Free. From Anthropic."
+    },
+    {
+      "id": "H6",
+      "angle": "Contrarian",
+      "format": "split",
+      "scene": "rules-doc",
+      "say": "AI can design good slides. Nobody gave it the rules.",
+      "overlay": "AI just needed the rules"
+    },
+    {
+      "id": "H7",
+      "angle": "Result",
+      "format": "box",
+      "scene": "designed-deck",
+      "say": "Claude made this deck, and I can edit every chart.",
+      "overlay": "Made by Claude. Fully editable."
+    },
+    {
+      "id": "H8",
+      "angle": "Question",
+      "format": "face-prop",
+      "scene": "designed-deck",
+      "say": "Want good slides from Claude, but they always come out boring?",
+      "overlay": "Claude's slides always look boring?"
+    }
+  ],
+  "skills_url": "https://github.com/ritu-dadhwal4/instagram-video-skills",
+  "edit_prompt": "`edit this reel`\nAttachments, in this order:\n1. Raw video: my main take.\n2. Reference video: copy its editing style (layout, pacing and captions).\n3. Hook image: the approved hook style. Build the first 3 seconds to match it.\n4. Clips (everything after the image): screen recordings and b-roll.\nOpen with hook **H_**: “hook line”, text overlay “overlay text”, format: format name.\nAfter the hook, follow my script: the same body and the CTA “Comment SLIDES”.\nInstagram reel, 9:16, about 30 seconds.",
+  "stops": {
+    "idea": "done",
+    "script": "done",
+    "hooks": "now",
+    "film": "next",
+    "edit": "next",
+    "post": "next",
+    "winner": "next"
+  },
+  "film": [
+    "Body: one clean take",
+    "Each picked hook line: two takes",
+    "CTA: one take",
+    "Screen: plain vs designed deck, Edit Data, code, OneDrive upload"
+  ],
+  "post": "Post every picked hook as a trial reel on the same day, at a similar time.",
+  "winner": "After about 24 hours, compare 3-second hold and watch time. **Winner: not picked yet.** Then share it with your followers."
+}
